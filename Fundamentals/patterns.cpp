@@ -52,5 +52,35 @@ int main()
         cout << endl;
     }
 
+    // pattern 3
+
+    //         *
+    //       *   *
+    //     *       *
+    //   *           *
+    // *               *
+
+    row = 6;
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < row - i - 1; j++)
+        {
+            cout << "  ";
+        }
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (j == 0 || j == i + 1 - 1)
+            {
+                cout << "*   ";
+            }
+            else
+            {
+                cout << "    ";
+            }
+        }
+        cout << endl;
+    }
+    
     return 0;
 }
