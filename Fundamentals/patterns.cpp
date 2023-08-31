@@ -113,5 +113,31 @@ int main()
         cout << endl;
     }
 
+    // pattern 5
+
+    // 1
+    // 2 * 2
+    // 3 * 3 * 3
+    // 4 * 4 * 4 * 4
+    // 5 * 5 * 5 * 5 * 5
+
+    row = 5;
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (j == 0)
+            {
+                cout << i + 1;
+            }
+            else
+            {
+                cout << " * " << i + 1;
+            }
+        }
+        cout << endl;
+    }
+
     return 0;
 }
