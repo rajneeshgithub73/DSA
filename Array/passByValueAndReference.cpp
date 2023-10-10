@@ -26,3 +26,5 @@ int main()
 
     return 0;
 }
+
+//** Arrays by default pass by refrence hota hai
